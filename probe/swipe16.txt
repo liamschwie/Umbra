@@ -1,0 +1,43 @@
+
+##### SWIPE CONFIG — pinned section 3 and list section 5 #####
+section 3 item 0: <nil>
+section 5 item 0: UISwipeActionsConfiguration
+   count=1 fullSwipe=true
+   [0] UIContextualAction title='Mark as Unread' style=0 bg=set img=set
+section 5 item 1: UISwipeActionsConfiguration
+   count=1 fullSwipe=true
+   [0] UIContextualAction title='Mark as Unread' style=0 bg=set img=set
+
+##### TRAILING SWIPE for comparison — section 5 #####
+cfg: UISwipeActionsConfiguration
+   [0] 'Delete'
+   [1] 'Mute'
+
+##### ITEM IDENTIFIER -> CONVERSATION (pinned + list) #####
+!! not a function
+
+##### SECTION ENUM MEANING #####
+  section 0 items=0 kind=?
+  section 1 items=0 kind=?
+  section 2 items=0 kind=?
+!! not a function
+
+##### APPLY-SNAPSHOT SELECTOR PRESENT #####
+  YES applyConversationListSnapshot:animatingDifferences:completion:
+  YES generateSnapshot
+  YES conversationForItemIdentifier:
+  YES leadingSwipeActionsConfigurationForIndexPath:
+  YES searchBar:textDidChange:
+  YES performSearch:completion:
+  YES filterMode
+  YES dataSource
+
+##### NAV TITLE / SEARCH BAR REACHABLE #####
+navigationItem: UINavigationItem
+  title set: yes
+  searchController: UISearchController
+  searchBar: UISearchBar
+navigationController: CKNavigationController
+  navigationBar: CKAvatarNavigationBar
+
+##### PROBE 3 COMPLETE #####

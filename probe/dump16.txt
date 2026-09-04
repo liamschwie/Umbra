@@ -1,0 +1,1014 @@
+
+########## CONVERSATION LIST CLASSES ##########
+CKBlackholeConversationListCell
+CKBlackholeConversationListCommonViewController
+CKBlackholeConversationListViewController
+CKConversationList
+CKConversationListAccessoryView
+CKConversationListAccessoryViewConfiguration
+CKConversationListCell
+CKConversationListCellLayout
+CKConversationListCollectionView
+CKConversationListCollectionViewController
+CKConversationListCollectionViewConversationCell
+CKConversationListCollectionViewDragFeedbackGenerator
+CKConversationListCollectionViewJunkConversationCell
+CKConversationListCollectionViewLayout
+CKConversationListCollectionViewRecentlyDeletedConversationCell
+CKConversationListCollectionViewRecoverableConversationCell
+CKConversationListCollectionViewToolbar
+CKConversationListController
+CKConversationListEmbeddedCollectionViewCell
+CKConversationListEmbeddedLargeTextTableViewCell
+CKConversationListEmbeddedNewMessageTableViewCell
+CKConversationListEmbeddedStandardTableViewCell
+CKConversationListFilter
+CKConversationListLargeTextCell
+CKConversationListNewMessageCell
+CKConversationListNewMessageCollectionViewCell
+CKConversationListScrollingController
+CKConversationListSearchCell
+CKConversationListStandardCell
+CKConversationListTableView
+CKConversationListTypingIndicatorView
+
+########## PINNED ##########
+CKPinnedConversationActivityItemViewBackdropLayer
+CKPinnedConversationActivityItemViewShadowLayer
+CKPinnedConversationActivitySnapshot
+CKPinnedConversationActivityView
+CKPinnedConversationCollectionViewCell
+CKPinnedConversationContactItemAvatarView
+CKPinnedConversationContactItemFromHandle
+CKPinnedConversationContactItemProvider
+CKPinnedConversationDropTargetCollectionViewCell
+CKPinnedConversationMediaObjectActivityItem
+CKPinnedConversationMediaObjectBubble
+CKPinnedConversationRichLinkActivityItem
+CKPinnedConversationRichLinkBubble
+CKPinnedConversationSummaryBubble
+CKPinnedConversationSummaryBubbleActivityItem
+CKPinnedConversationTailedActivityItemView
+CKPinnedConversationTapbackBubble
+CKPinnedConversationTapbackBubbleActivityItem
+CKPinnedConversationTypingBubble
+CKPinnedConversationTypingBubbleActivityItem
+CKPinnedConversationView
+CKPinnedSectionSeparatorView
+CKPinningOnboardingTitleCell
+CKQuickActionPinButton
+
+########## DATA SOURCE / SNAPSHOT ##########
+CKAppMenuDataSource
+CKBrowserSwitcherFooterViewDataSource
+CKMediaObjectAssetDataSource
+CKMediaObjectAssetDataSourceManager
+CKMessageEntryViewSnapshot
+CKMomentSharePreviewAssetsDataSourceManager
+CKPinnedConversationActivitySnapshot
+CKQLPreviewControllerDataSource
+CKSnapshotCacheKey
+CKSnapshotUtilities
+
+########## SEARCH ##########
+CKAppSearchResultsTableViewController
+CKAssistantSearchUtilities
+CKAttachmentSearchResultCell
+CKAttachmentsSearchController
+CKCollaborationSearchController
+CKContactsSearchManager
+CKConversationLargeTextSearchCell
+CKConversationListSearchCell
+CKConversationSearchController
+CKConversationSearchResultCell
+CKConversationSearchResultsController
+CKDetailsAttachmentsSearchController
+CKDetailsPassSearchController
+CKDetailsSearchResultsFooterCell
+CKDetailsSearchResultsTitleHeaderCell
+CKDetailsSearchViewController
+CKEditableSearchResultCell
+CKHighlightsSearchController
+CKLinkSearchController
+CKLinkSearchResultCell
+CKLocationSearchController
+CKLocationSearchResultCell
+CKMessageSearchResultCell
+CKMessageTypeSearchController
+CKMessagesSearchController
+CKNoAnimationSearchController
+CKNoAnimationSearchFieldAnimator
+CKPassLinkSearchResultCell
+CKPassSearchController
+CKPassSearchResultsCell
+CKPhotoSearchResultCell
+CKPhotosSearchController
+CKPhotosSearchResultsModeHeaderReusableView
+CKPhotosSearchResultsTitleHeaderCell
+CKRecipientSearchListController
+CKSQLiteTableSearchEnumeratorSetupHelper
+CKSQLiteTableSearchResultEnumerator
+CKSearchActivityItemProvider
+CKSearchAvatarSupplementryView
+CKSearchCollectionView
+CKSearchController
+CKSearchIndexingFooterCell
+CKSearchResultAnnotation
+CKSearchResultsTitleHeaderCell
+CKSearchThumbnailPreviewGenerator
+CKSearchVideoDuration
+CKSearchViewController
+CKSpotlightSearchResult
+
+########## FILTER ##########
+CKConversationListCollectionViewJunkConversationCell
+CKConversationListFilter
+CKFocusFilterBannerCollapsedCollectionViewCell
+CKFocusFilterBannerCollectionViewCell
+CKFullscreenEffectMessageFilter
+CKJunkRecoveryChatItem
+CKJunkRecoveryTranscriptCell
+CKRecentsViewController
+CKUnreadBannerView
+CKUnreadCountChatItem
+CKUnreadCountLabelCell
+
+########## METHODS: CKConversationListViewController ##########
+<absent>
+
+########## METHODS: CKConversationListCollectionViewController ##########
+  + conversationListCollectionViewControllerLogHandle
+  - _activityItemOriginationDirectionForItemIdentifier:conversation:
+  - _activityItemTopInsetForIndexPath:
+  - _allFrozenConversations
+  - _appendRecentlyDeletedIdentifersToSnapshot:
+  - _canShowCatalystFiltersNavigation
+  - _chatItemsDidChange:
+  - _ck_setNeedsUpdateOfMultitaskingDragExclusionRects
+  - _collectionView:sceneActivationConfigurationForItemAtIndexPath:point:
+  - _configureCatalystFiltersNavigation
+  - _configureForFilterMode:
+  - _configureNavbarButtonsForNavigationItem:
+  - _configurePinnedConversationCell:forConversation:itemIdentifier:indexPath:animated:
+  - _configureSecondarySubMenuInParentMenuItems:
+  - _conversationActionMenusForItemIdentifier:inSection:withCell:
+  - _conversationAfterDropDestination:fromDiffableDataSource:snapshot:excludingDraggedConversation:
+  - _conversationContactPhotosEnabledChangedNotification:
+  - _conversationDetailsActionForItemIdentifier:withCell:
+  - _conversationDisplayNameChangedNotification:
+  - _conversationDropProposalForCollectionView:dropSession:withDestinationIndexPath:
+  - _conversationFilteringStateChangedNotification:
+  - _conversationFromDragItem:
+  - _conversationHasActivityItem:
+  - _conversationIsFilteredChangedNotification:
+  - _conversationListDidChange:
+  - _conversationListDidFinishLoadingConversations:
+  - _conversationListPinnedConversationsDidChange:
+  - _conversationMessageWasSent:
+  - _conversationMuteDidChangeNotification:
+  - _conversationSpamFilteringStateChangedNotification:
+  - _conversationsEligibleForMute:
+  - _conversationsEligibleForReadStateToggle:
+  - _conversationsFromLocalDropSession:
+  - _conversationsInRowOfItemIdentifier:
+  - _dci_collectionView:contextMenuConfiguration:previewForDismissingToItemAtIndexPath:
+  - _dci_collectionView:contextMenuConfiguration:previewForHighlightingItemAtIndexPath:
+  - _dci_collectionView:contextMenuConfigurationForItemsAtIndexPaths:point:
+  - _deleteActionForSelectedConversations:
+  - _deleteConversationActionForItemIdentifier:withCell:
+  - _deleteSwipeActionForIndexPath:
+  - _dndSwipeActionForIndexPath:
+  - _dragItemsForConversation:indexPath:inCollectionView:
+  - _endHoldingUpdatesForBatchEditing:
+  - _endHoldingUpdatesOnViewWillAppear
+  - _feedbackPinningInteractionMethod
+  - _filterControlSelectionChanged:
+  - _focusFilterBannerShouldUseFullWidthKeylines
+  - _freezeConversations
+  - _getTitleForCurrentFilterMode
+  - _handingPendingConversationDidChange:
+  - _handleMovedMessagesInChatsWithGUIDsToRecentlyDeletedNotification:
+  - _handleSIMSubscriptionUpdate:
+  - _hasAlertsEnabledForAllConversations:
+  - _hasReadAllConversations:
+  - _hasStewieConversationSelected
+  - _hasUnreadConversation
+  - _indexPathOfDefaultConversation
+  - _iosUpdateNavbarLayoutIfNeeded
+  - _isOnlyActivityItemInRowForConversation:itemIdentifier:
+  - _itemIdentifierOfDefaultConversation
+  - _lastDisplayedActivitySnapshotCacheKeyForConversation:
+  - _macosUpdateNavbarLayoutIfNeeded
+  - _markAsActionForConversations:
+  - _markUnreadSwipeActionForIndexPath:
+  - _maxNumberOfDaysUntilDeletionInConversations:
+  - _messageSpamFilteringEnabled
+  - _messageUnknownFilteringEnabled
+  - _minNumberOfDaysUntilDeletionInConversations:
+  - _muteActionConversations:
+  - _numberOfRecoverableMessagesInConversations:
+  - _numberOfSelectedConversations
+  - _openConversationInNewWindowActionForItemIdentifier:
+  - _performConversationDropWithCollectionView:dropCoordinator:
+  - _performItemDropWithCollectionView:dropCoordinator:
+  - _performRecoverableDeletionForConversations:deleteDate:
+  - _performTranscriptPushForItemAtIndexPath:userInitiated:
+  - _permanentDeleteAction:
+  - _permanentDeleteSelectedConversations
+  - _permanentDeletebuttonToUseForSelectedConversations:
+  - _permanentDeletebuttonToUseForSelectedJunkConversations:
+  - _permanentDeletionConfirmedForConversations:
+  - _pinActionForItemIdentifier:
+  - _pinnedConversationShortNames
+  - _pinningSuggestionsForConversations:
+  - _presentPermanentDeletionConfirmationsForConversations:
+  - _presentRecoverConfirmationsForConversations:
+  - _previewProviderForConversation:
+  - _recentMessagesInPinnedConversations
+  - _recoverAction:
+  - _recoverButtonToUseForSelectedConversations:
+  - _recoverConfirmedForConversations:
+  - _recoverSelectedConversations
+  - _refreshConversationListCellForGroupPhotoUpdate:
+  - _reloadVisibleConversationList:
+  - _removeConversationsFromFrozenConversations:
+  - _resetMessageFiltering
+  - _resetSimFilteringToDefaultState
+  - _sanitizedFilterMode:
+  - _sanitizedFilterModeForFilterUnknownDisabled:
+  - _sanitizedFilterModeForFilterUnknownEnabled:
+  - _secondaryTextForFilterMode:
+  - _selectConversationAtIndexPath:animated:
+  - _selectedConversationsInRecentlyDeletedSection
+  - _setPinnedConversationViewLayoutStyle:shouldInvalidateLayout:
+  - _shouldAnimatePinningChangesForUpdateFollowingHoldForReason:
+  - _shouldSelectConversationAfterDeletingIndexPath:
+  - _shouldUsePreviewProviderForDragItemAtIndexPath:
+  - _showConversationWithComposition:atIndexPath:
+  - _showOscarModalActionTapped
+  - _showRecentlyDeletedModalActionTapped
+  - _simFilterActionsForActiveSubscriptions
+  - _simFilterSubMenu
+  - _snapshotOfAvatarViewForConversation:
+  - _submitFeedbackIfNecessaryForPinsChangedWithPreviousPinnedConversationIdentifiers:
+  - _submitFeedbackIfNecessaryForSuggestedPinnedConversationsFollowingOnboardingCompletedSuccessfully:
+  - _topLevelMenuForItemIdentifier:inSection:withCell:
+  - _topLevelMenuForMultipleSelectedConversations:
+  - _unfreezeConversations
+  - _updateAddsTypingChatItem:
+  - _updateBannerLayoutConstraints
+  - _updateCollectionViewImmediatelyIfNeeded
+  - _updateCollectionViewOffsetAddingBannerViewHeight:
+  - _updateCollectionViewOffsetRemovingBannerViewHeight:
+  - _updateContentUnavailableConfigurationUsingState:
+  - _updateConversationFilteredFlagsAndReportSpam
+  - _updateConversationListsAndSortIfEnabled
+  - _updateConversations:alertsHidden:
+  - _updateConversations:asRead:
+  - _updateInsets
+  - _updateLargeTitleDisplayModeWithAnimation:
+  - _updateNavbarLayoutIfNeeded
+  - _updateRemovesTypingChatItem:
+  - _updateScrollEdgeAppearanceProgress
+  - _updateSearchControllerForConversationListBelowMacSnapWidth:
+  - _updateSelectAllButtonItemTitle
+  - _updateSyncProgressIfNeededWithProgressController:forceShow:
+  - _updateToolbarItems
+  - _updatedSelectedIndexPathCount
+  - activeConversations
+  - animateInCollectionView:aboveBackgroundSnapshotView:enteringOnboarding:animationDistance:
+  - animateInPinsToFinalPosition
+  - animateOutBackgroundSnapshotView:
+  - applyConversationListSnapshot:animatingDifferences:completion:
+  - avatarHeaderWasTappedForConversation:
+  - beginHoldingConversationListUpdatesForPPTTests
+  - blockedSnapshotInfo
+  - cacheForLastDisplayedActivitySnapshotByConversation
+  - canShowSuggestedPinningOnboardingCell
+  - cancelButtonItem
+  - catalystFiltersNavigationBackButton
+  - catalystFiltersNavigationBackButtonTapped:
+  - cellForCollapsedSidebarFocusFilterCellInCollectionView:atIndexPath:
+  - cellForFocusFilterInCollectionView:atIndexPath:
+  - cellForIndexPath:inCollectionView:withItemIdentifier:
+  - cellForPinnedConversationDropTargetInCollectionView:atIndexPath:
+  - cellForPinnedConversationWithItemIdentifier:inCollectionView:atIndexPath:
+  - cellForPinningOnboardingTitleViewCollectionView:atIndexPath:
+  - cellForRecoverableConversationWithItemIdentifier:inCollectionView:atIndexPath:
+  - cellForStandardConversationWithItemIdentifier:inCollectionView:atIndexPath:
+  - cellPinningOnboardingItemIdentifier:inCollectionView:atIndexPath:
+  - closeButtonItem
+  - cloudKitEventNotificationManager:syncProgressDidUpdate:
+  - cloudKitSyncProgressViewController:actionButtonWasPressed:errors:
+  - collectionView:didBeginMultipleSelectionInteractionAtIndexPath:
+  - collectionView:didDeselectItemAtIndexPath:
+  - collectionView:didEndDisplayingCell:forItemAtIndexPath:
+  - collectionView:didSelectItemAtIndexPath:
+  - collectionView:dragPreviewParametersForItemAtIndexPath:
+  - collectionView:dropPreviewParametersForItemAtIndexPath:
+  - collectionView:dropSessionDidUpdate:withDestinationIndexPath:
+  - collectionView:itemsForAddingToDragSession:atIndexPath:point:
+  - collectionView:itemsForBeginningDragSession:atIndexPath:
+  - collectionView:shouldBeginMultipleSelectionInteractionAtIndexPath:
+  - collectionView:shouldDeselectItemAtIndexPath:
+  - collectionView:shouldHighlightItemAtIndexPath:
+  - collectionView:shouldSelectItemAtIndexPath:
+  - collectionView:willDisplayCell:forItemAtIndexPath:
+  - collectionView:willEndContextMenuInteractionWithConfiguration:animator:
+  - collectionView:willPerformPreviewActionForMenuWithConfiguration:animator:
+  - commitPinnedConversationsForEditingPins
+  - commitPinnedConversationsFromSnapshot:
+  - complimentaryIndexPathForConversationAtIndexPath:
+  - composeButtonItem
+  - composeToolbarItem
+  - configureConversationCell:forItemIdentifier:
+  - configureFocusFilterCell:
+  - configureFocusFilterCollapsedCell:
+  - configureForOscarFilter
+  - configureForRecentlyDeletedFilter
+  - configurePinnedConversationCell:forItemIdentifier:indexPath:animated:
+  - configureRecoverableConversationCell:forItemIdentifier:
+  - configureSearchBarEnabled:animated:
+  - configureSelectionBarButtonItem:usingStyle:
+  - contentController:actionTapped:
+  - contextMenuInteractionShouldBeginAtIndexPath:
+  - conversationAtIndexPath:
+  - conversationForItemIdentifier:
+  - conversationLayout
+  - conversationList
+  - conversationListCollectionViewControllerLogHandle
+  - conversationToPinPendingOrbDismissal
+  - conversationToUnpinPendingOrbDismissal
+  - conversationWillBeMarkedRead:
+  - conversationsAtIndexPaths:
+  - conversationsForItemIdentifiers:
+  - dataSource
+  - dataSourceWithCollectionView:
+  - deferredSearchQuery
+  - deleteButtonTappedForItemIdentifier:completionHandler:cellToUpdate:
+  - deleteSelectedConversation
+  - detailsNavigationControllerConversation:
+  - didDismissSearchController:
+  - didReorderConversationsWithTransaction:
+  - dismissCatalystSearch
+  - distanceBetweenConversationIndexPath:andIndexPath:
+  - doneButtonItem
+  - dragOrDropPreviewParametersForItemAtIndexPath:inCollectionView:
+  - dragPreviewViewForPinnedConversation:inCollectionView:
+  - editButtonItem
+  - editNameAndPhotoMenuItemSelected
+  - editOscarButtonItem
+  - endHoldingConversationListUpdatesForPPTTests
+  - fetchPinningSuggestions
+  - filterMode
+  - focusFilterBannerEnabledStateDidChange:
+  - frozenConversations
+  - frozenPinnedConversations
+  - generateSnapshot
+  - hasActivePinnedConversationDropSession
+  - haveAppliedInitialSnapshot
+  - hidePinsForAnimation
+  - holdPinningUpdatesForConversationDeletion
+  - holdPinningUpdatesForOnboardingAnimation
+  - indexPathOfFirstSelectedItem
+  - isApplyingSnapshot
+  - isCheckingIfPinningOnboardingNeeded
+  - isCommitingDiffableDataSourceTransaction
+  - isCurrentlyAnimatingPinningOnboardingSuggestions
+  - isSearchActive
+  - isSearchActiveAndDisplayingResultsForSearchText
+  - isShowingConversationFromCatalystOpenURL
+  - isShowingPinnedChatDropTarget
+  - isShowingPinningOnboarding
+  - isShowingSwipeDeleteConfirmation
+  - itemIdentifierForConversation:inSection:
+  - itemIdentifierIsFromPinnedSection:
+  - itemIdentifiersForConversations:inSection:
+  - itemIdentifiersForVisibleContextMenuInteractions
+  - itemProviderDisablesTouches
+  - lastSelectedConversationItemIdentifier
+  - lastUserSelectedConversationItemIdentifier
+  - lastUserSelectedConversationTime
+  - leadingSwipeActionsConfigurationForIndexPath:
+  - leaveJunkFilterIfNeeded
+  - macShouldShowZKWSearch
+  - modernSearchResultsController
+  - moveSelectedToRecentlyDeletedButtonItem
+  - muteConversationButtonTappedForConversationWithItemIdentifier:setMuted:
+  - nextPinnedConversationListUpdateShouldTriggerUnanimatedSnapshotUpdate
+  - numberOfConversations
+  - numberOfPinnedConversations
+  - optionsButtonItem
+  - performDeletionForActiveConversation:itemIdentifier:completionHandler:cellToUpdate:
+  - performDeletionForPendingConversationCell:completionHandler:
+  - performSearch:completion:
+  - permanentDeleteAllButtonItem
+  - permanentDeleteAllJunkButtonItem
+  - permanentDeleteSelectedButtonItem
+  - permanentDeleteSelectedJunkButtonItem
+  - pinButtonTappedForCell:
+  - pinConversation:withReason:
+  - pinConversationsWithCompletion:
+  - pinnedConversationIdentifiers
+  - pinnedConversationMultitaskingDragExclusionRect
+  - pinnedConversationSuggester
+  - pinnedConversationView:didUpdateWithActivitySnapshot:
+  - pinnedConversationViewLayoutStyle
+  - pinnedConversations
+  - pinnedConversationsFromSnapshot:
+  - pinningInteractionMethod
+  - presentDetailsForItemIdentifier:fromView:
+  - presentJunkConversationRecoveryConfirmation:
+  - presentPermanentJunkConversationDeletionConfirmation:
+  - presentPermanentJunkConversationDeletionConfirmation:alertsCompletedBlock:cancelBlock:
+  - presentRecoverableDeleteConfirmationsWithConversations:collapsedAppearance:alertsCompletedBlock:cancelBlock:
+  - previousPinnedConversationActivitySnapshotForConversation:
+  - prototypePinnedConversationCollectionViewCell
+  - reasonTrackingUpdater:didBeginHoldingUpdatesWithInitialReason:
+  - reasonTrackingUpdater:didEndHoldingUpdatesWithFinalReason:
+  - reasonTrackingUpdater:needsUpdateForReasons:followingHoldForReason:
+  - recommendedPinningConversations
+  - recoverAllButtonItem
+  - recoverSelectedButtonItem
+  - recoverableConversationMenu:
+  - recoverableDeleteSelectedConversations
+  - reloadData
+  - removeNewlyPinnedSuggestionCells:
+  - removePendingConversationCell
+  - scrollToFirstSelectedItemIfNecessary
+  - searchBar:textDidChange:
+  - searchBarForSearchViewController:
+  - searchBarSearchButtonClicked:
+  - searchBarShouldBeginEditing:
+  - searchBarTextDidBeginEditing:
+  - searchBarTextDidEndEditing:
+  - searchController
+  - searchController:conversationForChatGUID:
+  - searchController:didSelectItem:inChat:
+  - searchControllerDidBeginDragging:
+  - searchResultsController
+  - searchViewController:requestsPushOfSearchController:
+  - sectionHasActionableConversations:
+  - sectionHasSelectableConversations:
+  - selectAllButtonItem
+  - selectConversationClosestToDeletedIndex:
+  - selectDefaultConversationAnimated:
+  - selectDefaultConversationAnimated:removingPendingConversationCell:
+  - selectDefaultConversationAnimated:shouldUsePreviousySelectedIndexPath:
+  - selectFirstActiveConversation
+  - selectNextSequentialConversation:
+  - selectPinnedConversationForItem:
+  - selectedConversations
+  - selectedDeleteButtonForConversation:inCell:
+  - setBlockedSnapshotInfo:
+  - setCacheForLastDisplayedActivitySnapshotByConversation:
+  - setCanShowSuggestedPinningOnboardingCell:
+  - setCancelButtonItem:
+  - setCatalystFiltersNavigationBackButton:
+  - setCloseButtonItem:
+  - setComposeButtonItem:
+  - setComposeToolbarItem:
+  - setConversationLayout:
+  - setConversationToPinPendingOrbDismissal:
+  - setConversationToUnpinPendingOrbDismissal:
+  - setDataSource:
+  - setDeferredSearchQuery:
+  - setDoneButtonItem:
+  - setEditButtonItem:
+  - setEditOscarButtonItem:
+  - setEditingMode:animated:shouldUpdate:
+  - setFilterMode:
+  - setFrozenConversations:
+  - setFrozenPinnedConversations:
+  - setHasActivePinnedConversationDropSession:
+  - setHaveAppliedInitialSnapshot:
+  - setHidePinsForAnimation:
+  - setHoldPinningUpdatesForConversationDeletion:
+  - setHoldPinningUpdatesForOnboardingAnimation:
+  - setIsApplyingSnapshot:
+  - setIsCheckingIfPinningOnboardingNeeded:
+  - setIsCommitingDiffableDataSourceTransaction:
+  - setIsCurrentlyAnimatingPinningOnboardingSuggestions:
+  - setIsShowingPinnedChatDropTarget:
+  - setIsShowingPinningOnboarding:
+  - setIsShowingSwipeDeleteConfirmation:
+  - setItemIdentifiersForVisibleContextMenuInteractions:
+  - setLastSelectedConversationItemIdentifier:
+  - setLastUserSelectedConversationItemIdentifier:
+  - setLastUserSelectedConversationTime:
+  - setMacShouldShowZKWSearch:
+  - setModernSearchResultsController:
+  - setMoveSelectedToRecentlyDeletedButtonItem:
+  - setNeedsConversationListUpdateForFocusStateChange
+  - setNextPinnedConversationListUpdateShouldTriggerUnanimatedSnapshotUpdate:
+  - setOptionsButtonItem:
+  - setPermanentDeleteAllButtonItem:
+  - setPermanentDeleteAllJunkButtonItem:
+  - setPermanentDeleteSelectedButtonItem:
+  - setPermanentDeleteSelectedJunkButtonItem:
+  - setPinnedConversationSuggester:
+  - setPinnedConversationViewLayoutStyle:
+  - setPinningInteractionMethod:
+  - setPrototypePinnedConversationCollectionViewCell:
+  - setRecommendedPinningConversations:
+  - setRecoverAllButtonItem:
+  - setRecoverSelectedButtonItem:
+  - setSearchController:
+  - setSelectAllButtonItem:
+  - setUpdater:
+  - sharingSettingsViewController:didUpdateSharingState:
+  - sharingSettingsViewController:didUpdateWithSharingResult:
+  - sharingSettingsViewControllerDidUpdateContact:
+  - shouldAnimatePositionForRecommendedItemIdentifiers:pinnedItemIdentifiers:
+  - shouldInsetResultsForSearchController:
+  - shouldShowPinnedConversations
+  - showCannotPinMoreConversationsAlert
+  - showOscarModalAction
+  - showPinningOnboardingTapped
+  - showRecentlyDeletedModalAction
+  - startCompletePinningOnboardingAnimation
+  - startEndSuggestedPinsAnimation
+  - startSuggestedPinsAnimation
+  - togglePinStateForConversation:withReason:
+  - toggleReadButtonItem
+  - toolbarItemForIdentifier:
+  - toolbarItems
+  - toolbarItemsForJunkFilterHasConversations:hasSelectedConversations:
+  - toolbarItemsForRecentlyDeletedFilterHasConversations:hasSelectedConversations:
+  - trackSIMFilterUpdateEventFromOldSIMFilterIndex:toSelectedSIMFilterIndex:
+  - trailingSwipeActionsConfigurationForIndexPath:
+  - unpinButtonTappedForCell:withConversation:
+  - unpinConversation:withReason:
+  - updateBackButton
+  - updateBannerConstraintsForScrollViewDidScroll:
+  - updateBannerVisualEffectGroup
+  - updateConfigurationStateForSelectedCell
+  - updateContentsOfAllCellsAnimated:
+  - updateContentsOfCell:withItemIdentifier:atIndexPath:animated:
+  - updateContentsOfCellForConversation:animated:
+  - updateContentsOfCellWithIndexPath:animated:
+  - updateContentsOfCellWithItemIdentifier:animated:
+  - updateContentsOfCellWithItemIdentifier:indexPath:animated:
+  - updateContentsOfCellsWithItemIdentifiers:animated:
+  - updateContentsOfTipCellForCustomizationType:
+  - updateConversationList
+  - updateConversationListForMessageSentToConversation:
+  - updateConversationNamesForNicknames:
+  - updateConversationSelection
+  - updateConversationSelectionPreservingLastSelectedItemIdentifier
+  - updateFocusFilterBannerWithAnimation:
+  - updateManualScrollEdgeProgress
+  - updateNavigationItems
+  - updateNoMessagesDialog
+  - updateSIMFilterIndexAndReloadData:
+  - updateSMSSpamConversationsDisplayName
+  - updateSnapshotAnimatingDifferences:
+  - updateSnapshotAnimatingDifferences:completion:
+  - updateSyncProgressIfNeeded
+  - updater
+  - userDeletedJunkConversationFromTranscript
+  - userRecoveredJunkConversationFromTranscript
+  - willDismissSearchController:
+  - willPresentSearchController:
+  - yCoordinateForBorderBetweenPinnedAndActiveSectionExcludingConversations:
+
+########## METHODS: CKConversationListController ##########
+  - _additionalConversationMenuForCell:atIndexPath:
+  - _chatItemsDidChange:
+  - _conversationContactPhotosEnabledChangedNotification:
+  - _conversationDetailsActionForConversation:andCell:
+  - _conversationDisplayNameChangedNotification:
+  - _conversationFilteringStateChangedNotification:
+  - _conversationIsFilteredChangedNotification:
+  - _conversationListDidChange:
+  - _conversationListDidFinishLoadingConversations:
+  - _conversationMenuForCell:atIndexPath:
+  - _conversationMessageWasSent:
+  - _conversationMuteActionForConversation:andIndexPath:
+  - _conversationMuteDidChangeNotification:
+  - _conversationPinStateChangedNotification:
+  - _conversationSpamFilteringStateChangedNotification:
+  - _deleteConversationActionForCell:atIndexPath:
+  - _endHoldingUpdatesForBatchEditing:
+  - _endHoldingUpdatesOnViewWillAppear
+  - _getTitleForCurrentFilterMode
+  - _indexOfDefaultConversation
+  - _indexPathValidForActiveConversation:
+  - _indexPathValidForPendingConversation:
+  - _messageSpamFilteringEnabled
+  - _messageUnknownFilteringEnabled
+  - _openConversationInNewWindowActionForIndexPath:
+  - _refreshConversationList
+  - _reloadVisibleConversationList:
+  - _selectConversationAtIndex:animated:
+  - _shouldHaveAllFilterModes
+  - _showConversationWithComposition:atIndexPath:
+  - _updateConversationFilteredFlagsAndReportSpam
+  - _updateConversationListNeedsResort:
+  - _updateConversationListsAndSortIfEnabled
+  - _updateInsets
+  - _updateNavbarLayoutIfNeeded
+  - _updateSyncProgressIfNeededWithProgressController:forceShow:
+  - _updateToolbarItems
+  - activeConversations
+  - avatarHeaderWasTappedForConversation:inCell:
+  - beginHoldingConversationListUpdatesForKey:
+  - beginHoldingConversationListUpdatesForPPTTests
+  - chatToConversationListCellInfo
+  - cloudKitEventNotificationManager:syncProgressDidUpdate:
+  - cloudKitSyncProgressViewController:actionButtonWasPressed:errors:
+  - composeToolbarItem
+  - conversationCellHeight
+  - conversationChangingPinState
+  - conversationList
+  - conversationListCellClass
+  - conversationListCellToChatInfo
+  - conversationWillBeMarkedRead:
+  - deferredSearchQuery
+  - deleteButtonTappedForIndexPath:completionHandler:cellToUpdate:
+  - deleteSelectedConversation
+  - didDismissSearchController:
+  - endHoldingAllConversationListUpdatesForKey:
+  - endHoldingConversationListUpdatesForKey:
+  - endHoldingConversationListUpdatesForPPTTests
+  - filterMode
+  - frozenConversations
+  - isDraggingConversation
+  - isSearchActive
+  - isSearchActiveAndDisplayingResultsForSearchText
+  - isSelectingConversationProgrammatically
+  - isShowingSwipeDeleteConfirmation
+  - itemProviderDisablesTouches
+  - lastSelectedConversationItemIdentifier
+  - lastSelectedConversationTime
+  - modernSearchResultsController
+  - muteConversationButtonTappedForIndexPath:setMuted:
+  - optionsButtonItem
+  - performDeletionForActiveConversation:indexPath:completionHandler:cellToUpdate:
+  - performDeletionForPendingConversationCell:completionHandler:
+  - performSearch:completion:
+  - reloadCellForConversation:
+  - reloadData
+  - removePendingConversationCell
+  - searchBar:textDidChange:
+  - searchBarCancelButtonClicked:
+  - searchBarForSearchViewController:
+  - searchBarShouldBeginEditing:
+  - searchBarTextDidBeginEditing:
+  - searchBarTextDidEndEditing:
+  - searchCompletion
+  - searchController
+  - searchController:conversationForChatGUID:
+  - searchController:didSelectItem:inChat:
+  - searchControllerDidBeginDragging:
+  - searchResultsController
+  - searchViewController:requestsPushOfSearchController:
+  - searcher:conversationForChatGUID:
+  - searcher:userDidDeleteChatGUID:
+  - searcher:userDidSelectChatGUID:messageGUID:
+  - searcherDidComplete:
+  - selectConversationClosestToDeletedIndex:
+  - selectDefaultConversationAnimated:
+  - selectDefaultConversationAnimated:removingPendingConversationCell:
+  - selectFirstActiveConversation
+  - selectNextSequentialConversation:
+  - selectPinnedConversationForItem:
+  - selectedDeleteButtonForConversation:inCell:
+  - setChatToConversationListCellInfo:
+  - setComposeToolbarItem:
+  - setConversationCellHeight:
+  - setConversationChangingPinState:
+  - setConversationListCellToChatInfo:
+  - setDeferredSearchQuery:
+  - setDraggingConversation:
+  - setFilterMode:
+  - setFrozenConversations:
+  - setIsSelectingConversationProgrammatically:
+  - setIsShowingSwipeDeleteConfirmation:
+  - setLastSelectedConversationItemIdentifier:
+  - setLastSelectedConversationTime:
+  - setModernSearchResultsController:
+  - setOptionsButtonItem:
+  - setSearchCompletion:
+  - setSearchController:
+  - setSearchResultsController:
+  - setSpacingItem:
+  - setUpdater:
+  - sharingSettingsViewController:didUpdateSharingState:
+  - sharingSettingsViewController:didUpdateWithSharingResult:
+  - sharingSettingsViewControllerDidUpdateContact:
+  - shouldInsetResultsForSearchController:
+  - spacingItem
+  - tableView:didBeginMultipleSelectionInteractionAtIndexPath:
+  - tableView:dropSessionDidUpdate:withDestinationIndexPath:
+  - tableView:itemsForBeginningDragSession:atIndexPath:
+  - tableView:shouldBeginMultipleSelectionInteractionAtIndexPath:
+  - tableView:trailingSwipeActionsConfigurationForRowAtIndexPath:
+  - toolbarItemForIdentifier:
+  - updateBackButton
+  - updateConversationList
+  - updateConversationListForMessageSentToConversation:
+  - updateConversationNamesForNicknames:
+  - updateConversationSelection
+  - updateMarginWidth
+  - updateNavigationItems
+  - updateNoMessagesDialog
+  - updateSMSSpamConversationsDisplayName
+  - updateSyncProgressIfNeeded
+  - updateTitleViews:
+  - updater
+  - userDeletedJunkConversationFromTranscript
+  - userRecoveredJunkConversationFromTranscript
+  - willDismissSearchController:
+  - willPresentSearchController:
+
+########## METHODS: CKConversationList ##########
+  + conversationListAlertSuppressionContextForFilterMode:
+  + sharedConversationList
+  - _alreadyTrackedConversationForChat:
+  - _beginTrackingConversationWithChat:completion:
+  - _beginTrackingConversationWithChatIndirect:
+  - _chatItemsDidChange:
+  - _configureForOscarEnabledUnsortedConversationList
+  - _configureForUnsortedConversationList
+  - _conversationForChat:
+  - _conversationSortComparator
+  - _emptyConversationsDictionaryWithConversationsCount:
+  - _filterConversations:byHandleID:
+  - _filterConversationsByFocus:
+  - _filterConversationsWithoutiMessageJunk:
+  - _filterModeForConversationAsNonSMSCategorized:
+  - _handleIDForSIMFilterIndex:
+  - _insertConversationIntoSortedConversationList:
+  - _isParentWithSubfoldersForFilterMode:
+  - _messageSIMFilteringEnabled
+  - _messageSpamFilteringEnabled
+  - _messageUnknownFilteringEnabled
+  - _nonPlaceholderConversations
+  - _postConversationListChangedNotification
+  - _postConversationListUpdateVisibleConversationsNotificationForUID:
+  - _removeConversationsFromRecentlyDeleted:
+  - _setConversations:forFilterMode:
+  - _shouldFilterForParticipants:
+  - _shouldTreatConversationAsNonSMSCategorized:
+  - _testingTrackedConversations
+  - _updatePinnedConversationsControllerForRemovedConversations:
+  - beginTrackingConversation:forChat:
+  - clearHoldInUnreadFilter
+  - conversation:includedInFilterMode:
+  - conversationForExistingChat:
+  - conversationForExistingChatWithChatIdentifier:
+  - conversationForExistingChatWithDeviceIndependentID:
+  - conversationForExistingChatWithGUID:
+  - conversationForExistingChatWithGroupID:
+  - conversationForExistingChatWithPersonCentricID:
+  - conversationForExistingChatWithPinningIdentifier:
+  - conversationForHandles:displayName:joinedChatsOnly:create:
+  - conversationForHandles:displayName:lastAddressedHandle:lastAddressedSIMID:joinedChatsOnly:create:
+  - conversations
+  - conversationsDictionary
+  - conversationsForFilterMode:
+  - deleteConversation:
+  - deleteConversations:
+  - firstUnreadFilteredConversationIgnoringMessages:
+  - hasActiveConversations
+  - identifiersSetForConversations:
+  - isHoldingWasKnownSenderUpdates
+  - loadedConversations
+  - loadedPinnedConversations
+  - loadingConversations
+  - logConversationsTopCount:bottomCount:
+  - pendingConversation
+  - pendingConversationCreatingIfNecessary
+  - permanentlyDeleteRecoverableMessagesInConversations:synchronousQuery:completionHandler:
+  - pinnedConversations
+  - pinningIdentifierMap
+  - postFinishedInitalPinLoadIfNecessary
+  - primaryFilterModeForConversation:
+  - recoverDeletedMessagesInConversations:synchronousQuery:completionHandler:
+  - recoverJunkMessagesInConversations:
+  - recoverableDeleteForConversations:deleteDate:synchronousQuery:completionHandler:
+  - remergingConversations
+  - removeConversation:
+  - setConversationsDictionary:
+  - setHoldingWasKnownSenderUpdates:
+  - setLoadedPinnedConversations:
+  - setNeedsReload
+  - setPendingConversation:
+  - setPinnedConversations:
+  - setRemergingConversations:
+  - setSimFilterIndex:
+  - setTrackedConversations:
+  - simFilterIndex
+  - stopTrackingConversation:
+  - subclassifiedConversationsForFilterMode:
+  - topMostConversation
+  - trackedConversations
+  - unpendConversation
+  - unreadCountForFilterMode:
+  - unreadFilteredConversationCountIgnoringMessages:
+  - updateConversationFilteredFlagsAndReportSpam
+  - updateConversationListsAndSortIfEnabled
+  - updateConversationsForNewPinnedConversations:
+  - updateConversationsWasKnownSender
+  - updateEarliestMessageDateForConversations:
+  - updateFilteredByFocusStateForConversations:
+  - updatePinnedConversationsFromDataSource
+  - updateRecoverableConversationList
+
+########## METHODS: CKConversationListFilter ##########
+  + defaultFilter
+  - _conversation:matchesInbox:
+  - _conversation:matchesSpamFilterInbox:
+  - _conversation:matchesSpamFilterInboxGroup:
+  - _defaultSpamFilterInboxForCategory:
+  - _isSpamFilteredConversation:
+  - _spamFilterInboxForCategory:subCategory:
+  - _spamFilterInboxForConversation:
+  - _spamFilterInboxForConversationListInbox:
+  - _spamFilterInboxGroupForConversationListInbox:
+  - _spamFilterInboxGroupForInbox:
+  - cachedConversationPredicate
+  - conversationPredicate
+  - filterByChangingFocusConfiguration:
+  - filterByChangingInbox:
+  - filterByChangingUnreadOnly:
+  - isEqualToConversationListFilter:
+  - setCachedConversationPredicate:
+
+########## METHODS: CKConversation ##########
+  + conversationForAddresses:allowRetargeting:candidateConversation:
+  + conversationForContacts:candidateConversation:
+  + isSMSSpamFilteringEnabled
+  + newPendingConversation
+  + writableTypeIdentifiersForItemProvider
+  - _chatItemsDidChange:
+  - _chatSupportsTypingIndicators
+  - _clearTypingIndicatorsIfNecessary
+  - _conversationList
+  - _conversationVisualIdentity
+  - _createConversationVisualIdentityWithKeys:numberOfContacts:
+  - _handleIsForThisConversation:
+  - _invalidateApplicationSnapshotIfNeeded
+  - _unknownFilteringEnabled
+  - _updateContactsForVisualIdentityWithKeys:numberOfContacts:
+  - _updateGroupNameForVisualIdentity
+  - _updateGroupPhotoForVisualIdentity
+  - businessConversation
+  - clearConversationLoadFromSpotlight
+  - conversationListCollectionViewJunkItemIdentifier
+  - conversationListCollectionViewListItemIdentifier
+  - conversationListCollectionViewPinnedItemIdentifier
+  - conversationListCollectionViewRecentlyDeletedListItemIdentifier
+  - conversationVisualIdentityWithKeys:requestedNumberOfContactsToFetch:
+  - copyForPendingConversation
+  - ensureMessageWithGUIDIsLoaded:
+  - groupIdentityUpdateHandleID
+  - isAdHocGroupConversation
+  - isAppleConversation
+  - isBusinessConversation
+  - isGroupConversation
+  - isIgnoringTypingUpdates
+  - isMakoConversation
+  - isPinned
+  - isStewieConversation
+  - loadAllUnreadMessagesUpToMessageGUID:
+  - loadDataWithTypeIdentifier:forItemProviderCompletionHandler:
+  - localUserIsTyping
+  - mergedPinningIdentifiers
+  - needsReload
+  - needsUpdatedContactsForVisualIdentity
+  - needsUpdatedGroupNameForVisualIdentity
+  - needsUpdatedGroupPhotoForVisualIdentity
+  - pinnedConversationDisplayNamePreferringShortName:
+  - pinningIdentifier
+  - reloadIfNeeded
+  - senderIdentifier
+  - setBusinessConversation:
+  - setConversationListCollectionViewJunkItemIdentifier:
+  - setConversationListCollectionViewListItemIdentifier:
+  - setConversationListCollectionViewPinnedItemIdentifier:
+  - setConversationListCollectionViewRecentlyDeletedListItemIdentifier:
+  - setGroupIdentityUpdateHandleID:
+  - setHoldInUnreadFilter:
+  - setIgnoringTypingUpdates:
+  - setLocalUserIsComposing:typingIndicatorIcon:
+  - setLocalUserIsTyping:
+  - setNeedsReload
+  - setNeedsUpdatedContactOrderForVisualIdentity
+  - setNeedsUpdatedContactsForVisualIdentity:
+  - setNeedsUpdatedGroupNameForVisualIdentity
+  - setNeedsUpdatedGroupNameForVisualIdentity:
+  - setNeedsUpdatedGroupPhotoForVisualIdentity
+  - setNeedsUpdatedGroupPhotoForVisualIdentity:
+  - setShouldShowGroupNameUpdateBanner:
+  - setShouldShowGroupPhotoUpdateBanner:
+  - set_conversationVisualIdentity:
+  - shouldHoldInUnreadFilter
+  - shouldShowGroupNameUpdateBanner
+  - shouldShowGroupPhotoUpdateBanner
+  - uniqueIdentifier
+  - updateConversationVisualIdentityDisplayNameWithSender:
+  - updateConversationVisualIdentityGroupPhotoWithSender:
+  - updateDisplayNameIfSMSSpam
+  - updateLastViewedDate
+  - updateUnsentCompositionByAppendingComposition:
+  - updateUserActivity
+  - updateWasKnownSender
+
+########## IMChat identity + alert state ##########
+  + isGUIDInAttemptingListInScrutinyMode:
+  + removeGUIDInAttemptingListInScrutinyMode:
+  + storeGUIDInAttemptingListInScrutinyMode:
+  - _automation_markAsRead:messageGUID:forChatGUID:fromMe:
+  - _clearCachedIdentifier
+  - _deleteTransfersWithGUIDs:fromChatItems:
+  - _existingMessageFromMessagePartGUID:
+  - _fetchMessagesBeforeAndAfterGUID:numberOfMessagesToLoadBeforeGUID:numberOfMessagesToLoadAfterGUID:threadIdentifier:synchronous:completion:
+  - _fetchMessagesUpToGUID:limit:synchronous:completion:
+  - _guids
+  - _handleMessageGUIDDeletions:
+  - _initWithGUID:account:style:roomName:displayName:lastAddressedHandle:lastAddressedSIMID:items:participants:isFiltered:hasHadSuccessfulQuery:isRecovered:
+  - _setGUIDs:
+  - _setLocalUserIsComposing:suppliedGUID:
+  - _setLocalUserIsComposing:suppliedGUID:typingIndicatorData:
+  - _updateFileAttachmentGUIDsForMessageIfNeeded:withPayloadAttachments:
+  - _updateLastSeenMessageGuid:
+  - _updateRepliesIfNecessaryWithRemovedItems:threadIdentifiersOfRemovedParts:
+  - _updateTypingGUIDForMessageIfNeeded:
+  - beginShowingEditHistoryForChatItemGUID:
+  - chatIdentifier
+  - createIMChatItemForTransientAttachmentWithAssetUUID:parentChatItemGUID:
+  - currentLocationGUID
+  - deleteChatItemsWithTransferGUIDs:fromMessageItem:
+  - endShowingEditHistoryForChatItemGUID:
+  - fetchMessagesBeforeAndAfterGUID:numberOfMessagesToLoadBeforeGUID:numberOfMessagesToLoadAfterGUID:threadIdentifier:completion:
+  - fetchMessagesUpToGUID:limit:completion:
+  - groupChatIdentifierUppercase
+  - groupID
+  - guid
+  - hasStoredMessageWithGUID:
+  - identifier
+  - isMuted
+  - isShowingEditHistoryForChatItemGUID:
+  - lastSeenMessageGuid
+  - lastTranslatableMessageGUIDWithLanguageCode:
+  - loadInlineRepliesForThreadIdentifier:threadOriginator:messageGuid:
+  - loadMessagesBeforeAndAfterGUID:numberOfMessagesToLoadBeforeGUID:numberOfMessagesToLoadAfterGUID:loadImmediately:threadIdentifier:
+  - loadMessagesUpToGUID:date:limit:loadImmediately:
+  - loadMessagesUpToGUID:limit:
+  - loadUnreadMessagesWithLimit:fallbackToMessagesUpToGUID:
+  - localTypingMessageGUID
+  - mergedPinningIdentifiers
+  - messageForGUID:
+  - messageGuidsForMyUnreadMentions
+  - messageItemForGUID:
+  - originalGroupID
+  - persistentID
+  - pinningIdentifier
+  - removeMentionMessageGUID:
+  - sendMessageAcknowledgment:forChatItem:withGuid:
+  - sendSyndicationAction:forMessagePartGUID:syndicatedMessagePartRange:
+  - sendTapback:forChatItem:withGuid:
+  - sendUpdatedCollaborationMetadata:forMessageGUID:
+  - setCurrentLocationGUID:
+  - setGroupChatIdentifierUppercase:
+  - setGroupID:
+  - setIdentifier:
+  - setMergedPinningIdentifiers:
+  - setOriginalGroupID:
+  - setShowingEditHistoryForChatItemGUIDs:
+  - setTypingGUID:
+  - showingEditHistoryForChatItemGUIDs
+  - typingGUID
+  - updateLastMessageGUID:forLanguageCode:
+  - vocabularyIdentifier
+
+########## BADGE providers ##########
+CKBadgeView
+    - countLabel
+CKModifyBadgeOperation
+    - badgeValue
+    - initWithBadgeValue:
+    - modifyBadgeCompletionBlock
+    - setBadgeValue:
+    - setModifyBadgeCompletionBlock:
+CKModifyBadgeOperationInfo
+    - badgeValue
+    - setBadgeValue:
+CKPhotoTileBadgeView
+    + horizontalBadgeInset
+    + verticalBadgeInset
+    - _badgeImageView
+    - _updateBadgeImage
+    - _updateBadgeText
+CKSensitiveBadgeBalloonView
+    - commSafetyBadgeView
+    - setCommSafetyBadgeView:
+
+########## SUPERCLASS CHAINS ##########
+CKConversationListCollectionViewController -> UICollectionViewController -> UIViewController -> UIResponder -> NSObject
+CKConversation -> NSObject
+IMChat -> IMItemsController -> NSObject
+
+##### PROBE COMPLETE #####
