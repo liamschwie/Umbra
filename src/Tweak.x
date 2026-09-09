@@ -4,9 +4,8 @@
 #import <objc/runtime.h>
 #import "UmbraStore.h"
 
-// Measured on iOS 16.2 (20C65). See docs/compat-map.md. Every private
-// selector below is validated at runtime before use; when one is missing we
-// leave stock Messages alone rather than guessing.
+// Measured on iOS 16.2 (20C65). Every private selector below is validated at
+// runtime before use; when one is missing we leave stock Messages alone.
 
 #define UMBRA_ENTER_PHRASE @"open umbra"
 #define UMBRA_LEAVE_PHRASE @"close umbra"
@@ -34,8 +33,8 @@
 @interface CKSearchController : NSObject
 - (NSString *)chatGUIDForSearchableItem:(id)item;
 // Authoritative read point: whatever produced a section's results and however
-// they were stored, this is what serves them. Declared on the base class only
-// (probe/search16.txt:163), so hooking it here reaches every section.
+// they were stored, this is what serves them. It is declared on the base class,
+// so hooking it here reaches every section.
 - (id)results;
 @end
 
@@ -88,7 +87,7 @@ static BOOL UmbraRuntimeUsable(void) {
 
 /// Search is gated separately from the list. If these selectors go missing the
 /// list side still works; folding them into UmbraRuntimeUsable would take the
-/// whole tweak down instead. See docs/compat-map.md for the degrade this means.
+/// whole tweak down instead.
 static BOOL UmbraSearchUsable(void) {
     static BOOL usable = NO;
     static dispatch_once_t once;
@@ -325,9 +324,8 @@ static id UmbraFilteredResults(id controller, id results) {
     // with nothing hidden would drop every result in every section, and there
     // is nothing to protect in that state.
     if ([[UmbraStore shared] hiddenCount] == 0) return results;
-    // ponytail: NSArray is the shape measured for every section that carries
-    // results. An unmeasured container passes through unfiltered — confirm with
-    // probe/searchflow.js before assuming a section is covered.
+    // NSArray is the measured shape for every section that carries results. An
+    // unfamiliar container passes through unfiltered.
     if (![results isKindOfClass:[NSArray class]]) return results;
 
     NSArray *items = results;
@@ -702,8 +700,7 @@ static void UmbraDismissSearch(id listVC, UISearchBar *searchBar) {
 // Belt to the -queryResultsForItems: braces, and the load-bearing one.
 // -queryResultsForItems: is only one of several producers a section can use
 // (CKConversationSearchController also carries -tokenizedQueryResultsForItems:
-// and -_sortedAndRankedItemsWithItems:), and probe/flow16.txt recorded no
-// queryResultsForItems: call at all.
+// and -_sortedAndRankedItemsWithItems:).
 //
 // Filtering the *getter* rather than -setResults: is deliberate: Apple is free
 // to assign the backing ivar directly, and a setter hook never sees that. The
