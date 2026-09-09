@@ -1,1 +1,8 @@
+# Auto-detect text files and normalize line endings.
+* text=auto
+
+# GitHub does not recognize Logos files by default.
+*.x linguist-language=Objective-C
+
+# These are redacted probe captures, not source text Git should rewrite.
 probe/*.txt binary

@@ -1,0 +1,9 @@
+Package: com.liam.umbra
+Name: Umbra
+Version: 0.1.4
+Architecture: iphoneos-arm64
+Description: Hide conversations in Messages without touching message history.
+Maintainer: liam
+Author: liam
+Section: Tweaks
+Depends: firmware (>= 15.0), ellekit

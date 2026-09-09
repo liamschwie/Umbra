@@ -1,0 +1,24 @@
+
+########## CONTEXT MENU: pinned ##########
+MENU '' class=UIMenu options=0
+  MENU '' class=UIMenu options=1
+    [0] 'Unpin' UIAction img=image attrs=0
+    [1] 'Mark as Unread' UIAction img=image attrs=0
+    [2] 'Hide Alerts' UIAction img=image attrs=0
+    [3] 'Delete' UIAction img=image attrs=2
+
+########## CONTEXT MENU: standard ##########
+MENU '' class=UIMenu options=0
+  MENU '' class=UIMenu options=1
+    [0] 'Pin' UIAction img=image attrs=0
+    [1] 'Mark as Unread' UIAction img=image attrs=0
+    [2] 'Hide Alerts' UIAction img=image attrs=0
+    [3] 'Delete' UIAction img=image attrs=2
+
+########## SF SYMBOLS USED BY STOCK ACTIONS ##########
+  VC responds to _pinActionForItemIdentifier:: true
+  VC responds to _markUnreadSwipeActionForIndexPath:: true
+  VC responds to _dndSwipeActionForIndexPath:: true
+  VC responds to _deleteSwipeActionForIndexPath:: true
+
+##### PROBE 4 COMPLETE #####
